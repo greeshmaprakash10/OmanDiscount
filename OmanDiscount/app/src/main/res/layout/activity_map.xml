@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.omandiscount.Activity.MapActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/login">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textColor="@android:color/black"
+            android:textSize="28dp"
+            android:padding="38dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight=".1"
+                android:src="@drawable/locationsearch"/>
+            <EditText
+                android:layout_gravity="center_horizontal"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Location"
+                android:backgroundTint="@android:color/black"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight=".1"
+                android:src="@drawable/searchblack"/>
+            <EditText
+                android:layout_gravity="center_horizontal"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Product name/Category"
+                android:backgroundTint="@android:color/black"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginbutton"
+            android:text="Search"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/map_search"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:background="@drawable/google"
+            android:text="Map Search"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</LinearLayout>

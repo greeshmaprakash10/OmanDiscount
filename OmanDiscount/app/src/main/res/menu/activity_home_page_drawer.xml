@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menuhome"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_todaydeal"
+            android:icon="@drawable/todaysdealred"
+            android:title="Today's Deal" />
+        <item
+            android:id="@+id/nav_featured"
+            android:icon="@drawable/featuredred"
+            android:title="Featured" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/categoryred"
+            android:title="Category" />
+        <item
+            android:id="@+id/nav_dealer"
+            android:icon="@drawable/dealerred"
+            android:title="Dealers" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settingsred"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/phonered"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logoutred"
+            android:title="Logout" />
+    </group>
+</menu>
