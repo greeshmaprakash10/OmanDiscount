@@ -22,13 +22,14 @@ import com.google.android.gms.maps.model.Marker;
 import org.w3c.dom.Text;
 
 public class DealersDetails extends AppCompatActivity  implements
-
         GoogleMap.OnInfoWindowCloseListener,
-        OnMapAndViewReadyListener.OnGlobalLayoutAndMapReadyListener {
-    DealersModel dealersModel;
-    private GoogleMap mMap;
+        OnMapAndViewReadyListener.OnGlobalLayoutAndMapReadyListener
+{
+        DealersModel dealersModel;
+        private GoogleMap mMap;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_dealers_details);
@@ -36,9 +37,12 @@ public class DealersDetails extends AppCompatActivity  implements
         SpannableString s = new SpannableString(title);
         s.setSpan(new ForegroundColorSpan(Color.BLACK), 0, title.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         getSupportActionBar().setTitle(s);
-        try {
+        try
+        {
             dealersModel= (DealersModel) getIntent().getSerializableExtra("model");
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             e.printStackTrace();
         }
         ImageView delr=(ImageView)findViewById(R.id.iv_delear_image);
